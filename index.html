@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Development Technologies Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+        <div class="class-form">
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required> 
+        </div>
+        <div class="class-form">
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="class-form">
+            <label for="number" id="number-label">Age: </label>
+            <input type="number" name="age" id="number" placeholder="Enter you Age" min="10" max="99">
+        </div>
+        <div class="class-form">
+            <label for="dropdown" id="dropdown-label">Current Role: </label>
+            <select name="dropdown" id="dropdown">
+                <option disabled selected value>Select Current Role</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="UI-UX">UI-UX</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+                <option value="Mobile Developer">Mobile Developer</option>
+            </select>
+        </div>
+        <div class="class-form">
+            <p>Which site would you recommend for web development?</p>
+            <label>
+                <input type="radio" name="user-recommend" value="FreeCodeCamp" checked> 
+                FreeCodeCamp
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="Udemy"> 
+                Udemy
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="CodeAcademy"> 
+                CodeAcademy
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="PluralSight"> 
+                PluralSight
+            </label>
+        </div>
+        <div class="class-form">
+            <p>Technologies you would like to learn:</p>
+            <label>
+                <input type="checkbox" name="HTML" value="HTML">
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="CSS" value="CSS">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="JAVASCRIPT" value="JAVASCRIPT">
+                JAVASCRIPT
+            </label>
+            <label>
+                <input type="checkbox" name="REACT" value="REACT">
+                REACT
+            </label>
+            <label>
+                <input type="checkbox" name="ANGULAR" value="ANGULAR">
+                ANGULAR
+            </label>
+        </div>
+        <div class="class-form">
+            <p>Comments or Suggestions</p>
+            <textarea name="" id="" cols="30" rows="4"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+        
+        
+
+    </form>
+    
+</body>
+</html>
